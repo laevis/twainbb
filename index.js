@@ -5,7 +5,7 @@ var kraken = require('kraken-js');
 var i18n = require('./helpers/i18n.js')
 var validate = require('./helpers/validation.js')
 var bodyParser = require('body-parser');
-var session = require('express-session');
+var session = require('express-session'); 
 
 var options, app;
 
