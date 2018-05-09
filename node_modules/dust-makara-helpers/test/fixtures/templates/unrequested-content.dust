@@ -1,0 +1,1 @@
+{@message key="hello"/} {@message key="world" /}

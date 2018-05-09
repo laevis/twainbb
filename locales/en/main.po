@@ -1,0 +1,74 @@
+msgid "api:users:put:username_unavailable"
+msgstr "Username is not available at this time"
+
+msgid "api:users:put:email_unavailable"
+msgstr "Email is not available at this time"
+
+msgid "api:users:put:error"
+msgstr "User '{username}' could not be added to the database. Error occurred at: {time}"
+
+msgid "api:users:put:success"
+msgstr "User '{username}' added successfully at '{time}'"
+
+msgid "api:users:post:invalid_parameters"
+msgstr "User does not exist"
+
+msgid "api:users:post:authentication_successful"
+msgstr "Authentication successful"
+
+msgid "api:users:post:authentication_failed"
+msgstr "Authentication failure, could not validate parameters"
+
+msgid "phrase:login"
+msgstr "Login"
+
+msgid "phrase:register"
+msgstr "Register"
+
+msgid "phrase:register_an_account"
+msgstr "Register an account"
+
+msgid "phrase:username_tooltip"
+msgstr "Your username is how others will access your profile and mention you in posts, it will appear as @username"
+
+msgid "phrase:displayname_tooltip"
+msgstr "The display name can be anything, it is what will be displayed next to your posts and profile."
+
+msgid "phrase:username_placeholder"
+msgstr "Username"
+
+msgid "phrase:displayname_placeholder"
+msgstr "Display name"
+
+msgid "phrase:password_placeholder"
+msgstr "Password"
+
+msgid "phrase:repeatpassword_placeholder"
+msgstr "Repeat Password"
+
+msgid "phrase:email_placeholder"
+msgstr "Email"
+
+msgid "phrase:viewing_topics"
+msgstr "Users viewing topics"
+
+msgid "phrase:show_viewing_topics"
+msgstr "Toggle all topics being viewed"
+
+msgid "phrase:readers"
+msgstr "Readers"
+
+msgid "phrase:welcome"
+msgstr "Welcome"
+
+msgid "phrase:guest"
+msgstr "Guest"
+
+msgid "phrase:guest_teaser"
+msgstr "This community would be much funnier with you in the picture, so what are you waiting for? Login or register to be a part of an evergrowing community, discuss your favorite topics, follow your friends and learn from new experiences."
+
+msgid "phrase:join"
+msgstr "Join the community"
+
+msgid "phrase:search_placeholder"
+msgstr "Enter a search phrase..."

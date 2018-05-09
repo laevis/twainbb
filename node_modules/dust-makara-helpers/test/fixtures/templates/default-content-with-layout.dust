@@ -1,0 +1,1 @@
+{>"layout" /}{<body}{@message key="hello"/} {@useContent bundle="world.properties"}{@message key="world" /}{/useContent}{/body}

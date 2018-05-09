@@ -1,0 +1,36 @@
+extends skeleton/container
+
+block index 
+    .sidebar
+        button(data-trigger='[modal/open]', data-trigger-target='[modal/login]')
+            i.fa.fa-user
+            |  Login to TwainBB
+    
+    .main
+        .tabs
+            ul
+                li.active
+                    i.fa.fa-sun
+                    |  New
+                li
+                    i.fa.fa-clock
+                    |  Unread (12)
+                li
+                    i.fa.fa-star
+                    |  Recommended
+                li
+                    i.fa.fa-fire
+                    |  Hot
+                    
+        .filtertopics
+            ul
+                li
+                    i.fa.fa-sort
+        .topics
+            ul
+                #{test}
+        
+            .more
+                button.btngray(style='width:200px')
+                    i.fa.fa-sync
+                    |  Load more

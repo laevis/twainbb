@@ -1,0 +1,140 @@
+html
+    head
+        title TwainBB
+        meta(charset='utf-8')
+        meta(name='viewport', content='initial-scale=1.0, user-scalable=no')
+        meta(name='ROBOTS', content='NOODP')
+        script(src='js/jquery.js')
+        script(src='js/alertify.js')
+        script(src='js/fermata.js')
+        script(src='js/scrollto.js')
+        script(src='js/tooltip.js')
+        script(src='js/history.js')
+        script(src='js/pages.js')
+        script(src='js/app.js')
+        script(src='js/api/users/register.js')
+        script(src='js/api/users/login.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js')
+        script(src='js/socket.js')
+        link(href='https://fonts.googleapis.com/css?family=Rubik:400,500', rel='stylesheet')
+        link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+        link(rel='stylesheet', type='text/css', href='css/app.css')
+        link(rel='stylesheet', type='text/css', href='css/alertify.css')
+body
+    .tModal(data-trigger='[modal/login]')
+        .material-icons.tModalClose(data-trigger='[modal/close]') close
+        h3 Login
+        form(class='loginForm' data-trigger='[form/login]')
+            input(type='text' placeholder=_("phrase:username_placeholder") name='lUsername')
+            input(type='password' placeholder=_("phrase:password_placeholder") name='lPassword')
+
+            button(style='margin:0' type='submit')
+                i.fa.fa-paper-plane 
+                | #{_("phrase:login")}   
+
+    .tModal(data-trigger='[modal/register]')
+        .material-icons.tModalClose(data-trigger='[modal/close]') close
+        h3 #{_("phrase:register_an_account")}
+        form(class='registerForm' data-trigger='[form/register]')
+            input(type='text' rel='tooltip' title=_("phrase:username_tooltip") placeholder=_("phrase:username_placeholder") name='rUsername')
+            input(type='text' rel='tooltip' title=_("phrase:displayname_tooltip") placeholder=_("phrase:displayname_placeholder") name='rDisplayname')
+
+            input(type='password' placeholder=_("phrase:password_placeholder") name='rPassword')
+            input(type='password' placeholder=_("phrase:repeatpassword_placeholder") name='rRepeatPassword')
+
+            input(type='email' placeholder=_("phrase:email_placeholder") name='rEmail')
+
+            button(style='margin:0' type='submit')
+                i.fa.fa-paper-plane 
+                | #{_("phrase:register")}
+
+
+    .tOverlay
+    .sideslide
+        .title #{_("phrase:viewing_topics")}
+        .topics
+            ul
+                li
+                    .readcount(rel='tooltip', title=_("phrase:readers"))
+                        .material-icons wifi_tethering
+                        |  10
+                    a(href='', style='display:block')
+                        .title
+                            | Lorem ipsum dolor sit amet
+                    ul.stats
+                        li
+                            a(href='')
+                                .tab Add-ons
+                            a(href='')
+                                .tab Help
+    .container
+        .nav
+            .live
+                .trigger(rel='tooltip', title=_("phrase:show_viewing_topics"))
+                    .material-icons wifi_tethering
+            ul
+                a(href='')
+                    li(style='float:left;border-right: 1px solid #f2f5f9;')
+                        .material-icons pages
+                
+                .logo 
+                    a(href='') TwainBB
+                
+                if isLoggedIn        
+                    a(href='')
+                        li
+                            img(src='https://ca.slack-edge.com/TAEP863M4-UADKM0FFE-4bfc4f34da41-48')
+                            .placeholder_username
+                                b Akke
+                                .material-icons(style='float: right; margin: -2px 0 0 5px;') keyboard_arrow_down
+                    a(href='')
+                        li
+                            .material-icons settings
+                            
+                    a(href='')
+                        li
+                            .material-icons email
+                            .flag 2
+                else
+                    a(href='')
+                        li(rel='tooltip', title=_("phrase:join") data-trigger='[modal/open]', data-trigger-target='[modal/register]')
+                            .material-icons person_add
+                            
+                    a(href='')
+                        li(rel='tooltip', title=_("phrase:login") data-trigger='[modal/open]', data-trigger-target='[modal/login]')
+                            .material-icons person
+                            
+                input.search(type='text', placeholder=_("phrase:search_placeholder"))
+        
+        
+        if !isLoggedIn
+            .header
+                .wrap
+                    .guest
+                        h2
+                            | #{_("phrase:welcome")}, 
+                            b #{_("phrase:guest")}
+                                | !
+                        p
+                            | #{_("phrase:guest_teaser")}
+                        button.btnblue(data-trigger='[modal/open]' data-trigger-target='[modal/register]') #{_("phrase:join")}
+        .subnav
+            ul
+                a(href='')
+                    li
+                        .material-icons markunread_mailbox
+                        | New
+                a(href='')
+                    li
+                        .material-icons grade
+                        | Recommended
+                a(href='')
+                    li
+                        .material-icons whatshot
+                        | Hot
+                a(href='')
+                    li
+                        .material-icons folder_special
+                        | Subscribed
+        .wrap
+            block index

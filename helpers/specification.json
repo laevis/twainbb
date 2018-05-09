@@ -1,0 +1,26 @@
+{
+    "users": {
+        "": {
+            "PUT": {
+                "properties": {
+                    "username": {"type": "string", "minLength": 1, "maxLength": 15, "errorMessage": "Username can not be empty or longer than 15 characters."},
+                    "displayname": {"type": "string", "minLength": 1, "maxLength": 30, "errorMessage": "Display name can not be empty or be longer than 30 characters."},
+                    "password": {"type": "string", "minLength": 6, "pattern": "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$", "errorMessage": "Password must be 8 characters or more and have at least one uppercase and lowercase letter, one digit and one special character."},
+                    "email": {"type": "string", "minLength": 1, "format": "email", "errorMessage": "Email is not of valid format."}
+                },
+                "required": ["username", "displayname", "password", "email"],
+                "additionalProperties": false
+            },
+
+            "POST": {
+                "properties": {
+                    "username": {"type": "string", "minLength": 1, "errorMessage": "Username can not be empty."},
+                    "password": {"type": "string", "minLength": 6, "pattern": "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$", "errorMessage": "Invalid password format"},
+                    "token": {"type": "string", "minLength": 1}
+                },
+                "required": ["username", "password"],
+                "additionalProperties": false
+            }
+        }
+    }
+}

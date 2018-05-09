@@ -1,0 +1,65 @@
+{
+
+    "express": {
+        "view cache": false,
+        "view engine": "pug",
+        "views": "path:./public/templates"
+    },
+
+
+    "view engines": {
+        "dust": {
+            "module": "makara",
+            "renderer": {
+                "method": "dust",
+                "arguments": [
+                    {
+                        "cache": false,
+                        "helpers": "config:dust.helpers",
+                        "whitespace": true
+                    }
+                ]
+            }
+        },
+        "pug": {
+           "module": "pug",
+           "renderer": "__express"
+        }
+    },
+
+
+
+    "middleware": {
+
+        "devtools": {
+            "enabled": true,
+            "priority": 35,
+            "module": {
+                "name": "construx",
+                "arguments": [
+                    "path:./public",
+                    "path:./.build",
+                    {
+
+                        "template": {
+                            "module": "construx-dustjs",
+                            "files": "/templates/**/*.js",
+                            "base": "templates"
+                        },
+
+
+                        "css": {
+                            "module": "construx-less",
+                            "files": "/css/**/*.css"
+                        },
+
+                        "copier": {
+                            "module": "construx-copier",
+                            "files": "**/*"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,1388 @@
+/* 2196f3 */
+@font-face {
+  src: url(../fonts/Bebas.otf);
+  font-family: Bebas;
+}
+/* line 46, css/app */
+body {
+  color: #111111;
+  font-family: 'Rubik', sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+  background: #ecf1f5;
+}
+/* line 54, css/app */
+html {
+  color: #111111;
+  font-family: 'Rubik', sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+  background: #ecf1f5;
+}
+/* line 62, css/app */
+b {
+  font-weight: 500;
+}
+/* line 65, css/app */
+::-webkit-input-placeholder {
+  color: #a1a5ab;
+}
+/* line 68, css/app */
+::-moz-placeholder {
+  color: #a1a5ab;
+}
+/* line 71, css/app */
+:-ms-input-placeholder {
+  color: #a1a5ab;
+}
+/* line 74, css/app */
+:-moz-placeholder {
+  color: #a1a5ab;
+}
+/* line 77, css/app */
+* {
+  box-sizing: border-box;
+}
+/* line 80, css/app */
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+/* line 84, css/app */
+::-webkit-scrollbar {
+  width: 8px;
+}
+/* line 87, css/app */
+::-webkit-scrollbar-track {
+  background: #ebedf1;
+}
+/* line 90, css/app */
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 4px;
+}
+/* line 94, css/app */
+.header {
+  background: #8296f3;
+  width: 100%;
+  padding: 10px 20px;
+  display: flow-root;
+  position: relative;
+  z-index: 2;
+}
+/* line 101, css/app */
+.header h2 {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 1.3em;
+  color: #6f6f6f;
+}
+/* line 108, css/app */
+.header .wrap {
+  padding: 0 20px;
+}
+/* line 112, css/app */
+.tabs {
+  margin: 0;
+  float: left;
+}
+/* line 115, css/app */
+.tabs > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  float: left;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+}
+/* line 124, css/app */
+.tabs > ul > li {
+  float: left;
+  border-bottom: none;
+  padding: 10px 30px;
+  background: #ffffff;
+  font-weight: 500;
+  transition: 0.1s all ease-in-out;
+  font-size: 14px;
+  cursor: pointer;
+  color: #808080;
+}
+/* line 134, css/app */
+.tabs > ul > li:first-child {
+  border-radius: 4px 0 0 4px;
+}
+/* line 137, css/app */
+.tabs > ul > li:last-child {
+  border-radius: 0 4px 4px 0;
+}
+/* line 140, css/app */
+.tabs > ul > li:hover {
+  color: #333333;
+  background: #f9f9f9;
+}
+/* line 144, css/app */
+.tabs > ul > li > .svg-inline--fa {
+  height: 12px;
+}
+/* line 148, css/app */
+.tabs > ul .active {
+  color: #ffffff !important;
+  background: #565656 !important;
+}
+/* line 154, css/app */
+.wrapHalf {
+  width: 50%;
+  margin: 0 auto;
+  display: flow-root;
+  position: relative;
+  padding: 20px;
+}
+/* line 161, css/app */
+.wrap {
+  width: 70%;
+  margin: 0 auto;
+  display: flow-root;
+  padding: 20px 40px;
+}
+/* line 167, css/app */
+.nav {
+  width: 100%;
+  padding: 0;
+  float: left;
+  background: #ffffff;
+  line-height: 1;
+  position: relative;
+  border-bottom: 1px solid #f2f5f9;
+  z-index: 1;
+}
+/* line 168, css/app */
+.nav .live {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 172, css/app */
+.nav .live .trigger {
+  cursor: pointer;
+  padding: 21px 30px;
+  color: rgba(43, 43, 43, 0.65);
+  transition: 0.1s all ease-in-out;
+  font-weight: 500;
+  text-align: center;
+  border-top: 5px solid transparent;
+}
+/* line 182, css/app */
+.nav .userslide_active {
+  -webkit-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  background: #8296f3 !important;
+}
+/* line 188, css/app */
+.nav .user {
+  position: absolute;
+  right: 10px;
+  top: 2px;
+}
+/* line 192, css/app */
+.nav .user img {
+  height: 50px;
+  margin: 8px;
+  background: #f5f7fb;
+  cursor: pointer;
+  padding: 10px;
+  margin: 3px 0;
+  border-radius: 50%;
+  transition: 0.1s all ease-in-out;
+}
+/* line 201, css/app */
+.nav .user img:active {
+  -webkit-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  background: #8296f3 !important;
+}
+/* line 208, css/app */
+.nav .user .trigger {
+  color: rgba(43, 43, 43, 0.65);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 2px;
+  transition: 0.1s all ease-in-out;
+  font-weight: 500;
+  border-radius: 4px;
+  margin: 5px;
+}
+/* line 219, css/app */
+.nav > ul {
+  list-style-type: none;
+  margin: 0 auto;
+  width: 80%;
+  padding: 0;
+}
+/* line 221, css/app */
+.nav > ul > a > li {
+  padding: 20px 30px;
+  float: right;
+  color: rgba(43, 43, 43, 0.55);
+  transition: 0.1s all ease-in-out;
+  font-weight: 500;
+  text-align: center;
+  border-top: 5px solid transparent;
+  position: relative;
+}
+/* line 222, css/app */
+.nav > ul > a > li .flag {
+  position: absolute;
+  top: 15px;
+  background: #F64747;
+  color: white;
+  right: 15px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 11px;
+}
+/* line 241, css/app */
+.nav > ul > a > li img {
+  display: inline-block;
+  border-radius: 4px;
+  height: 35px;
+  margin: -9px 15px -9px 0;
+}
+/* line 247, css/app */
+.nav > ul > a > li:hover {
+  color: #333333;
+  background: #f8f8f8;
+}
+/* line 266, css/app */
+.nav .trigger_active {
+  border-color: transparent !important;
+}
+/* line 269, css/app */
+.nav .search {
+  float: right;
+  margin: 12px;
+  width: 20%;
+  padding: 12px;
+  background: white;
+  border: 1px solid #e7e7e7;
+  border-radius: 2px;
+}
+/* line 278, css/app */
+.nav .svg-inline--fa {
+  height: auto;
+  margin: 0;
+  font-size: 15px;
+  margin-top: -1px;
+  text-align: center;
+}
+/* line 285, css/app */
+.nav .avatar {
+  border: none;
+  float: right;
+  padding: 0;
+  margin: 17px;
+}
+/* line 292, css/app */
+.bell {
+  position: relative;
+}
+/* line 294, css/app */
+.bell:active {
+  -webkit-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  background: #8296f3 !important;
+  color: #ffffff !important;
+}
+/* line 301, css/app */
+.bell:after {
+  right: -10px;
+  top: -7px;
+  height: 60px;
+}
+/* line 309, css/app */
+.live .trigger:hover {
+  color: #333333;
+  background: #f8f8f8;
+}
+/* line 317, css/app */
+.user .trigger:active {
+  -webkit-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  background: #8296f3 !important;
+  color: #ffffff !important;
+}
+/* line 324, css/app */
+.user .trigger:hover {
+  color: #333333;
+  background: #f9f9f9;
+}
+/* line 330, css/app */
+button {
+  outline: none;
+  border: none;
+  font-size: inherit;
+  width: 100%;
+  padding: 14px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 2px;
+  transition: 0.1s all ease-in-out;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: inherit;
+  background: #76b852;
+}
+/* line 345, css/app */
+button:active {
+  -webkit-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.1) inset, inset 0 -10px 10px -10px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.1) inset, inset 0 -10px 10px -10px rgba(0, 0, 0, 0);
+  -moz-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.1) inset, inset 0 -10px 10px -10px rgba(0, 0, 0, 0);
+}
+/* line 350, css/app */
+button:hover {
+  background: #74b351;
+}
+/* line 353, css/app */
+button .svg-inline--fa {
+  height: 11px;
+  filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.1));
+}
+/* line 357, css/app */
+button .material-icons {
+  display: inline-block;
+}
+/* line 361, css/app */
+button[disabled] {
+  background: #d2d2d2 !important;
+  color: #7b7b7b;
+  text-shadow: none;
+  cursor: not-allowed;
+  font-weight: normal;
+  font-style: italic;
+}
+/* line 369, css/app */
+input {
+  border: none;
+  background: #f5f7fb;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+  color: #676d75;
+  transition: 0.1s all ease-in-out;
+  font-family: inherit;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: inherit;
+}
+/* line 382, css/app */
+input:focus {
+  background: #f0f2f5;
+}
+/* line 385, css/app */
+input:last-child {
+  margin-bottom: 0;
+}
+/* line 389, css/app */
+form {
+  margin: 0;
+}
+/* line 391, css/app */
+form .half {
+  width: 100%;
+  float: left;
+}
+/* line 394, css/app */
+form .half input {
+  width: 49.5%;
+  float: left;
+}
+/* line 397, css/app */
+form .half input:last-child {
+  float: right;
+}
+/* line 401, css/app */
+form .half select {
+  width: 49.5%;
+  float: left;
+}
+/* line 404, css/app */
+form .half select:last-child {
+  float: right;
+}
+/* line 410, css/app */
+select {
+  border: none;
+  background: #f5f7fb;
+  padding: 15px;
+  border-radius: 4px;
+  outline: none;
+  color: #676d75;
+  transition: 0.1s all ease-in-out;
+  font-family: inherit;
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* line 421, css/app */
+select:focus {
+  background: #f0f2f5;
+}
+/* line 424, css/app */
+select:last-child {
+  margin-bottom: 0;
+}
+/* line 428, css/app */
+.svg-inline--fa {
+  margin-right: 5px;
+}
+/* line 431, css/app */
+.logo {
+  font-family: Bebas;
+  font-size: 31px;
+  color: #8296f3;
+  letter-spacing: 1;
+  float: left;
+  margin: 20px;
+  margin-bottom: 0;
+}
+/* line 439, css/app */
+.logo img {
+  height: 55px;
+}
+/* line 444, css/app */
+.userarea li {
+  float: right;
+  padding: 30px 20px;
+}
+/* line 448, css/app */
+.userarea .svg-inline--fa {
+  font-size: 20px;
+}
+/* line 452, css/app */
+.main {
+  float: left;
+  width: 75%;
+  margin: 20px 0;
+}
+/* line 457, css/app */
+.topics {
+  width: 100%;
+  float: left;
+}
+/* line 460, css/app */
+.topics .new {
+  background: #76b852;
+  position: absolute;
+  color: #FFF;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 4px;
+  top: -10px;
+  left: -10px;
+  cursor: default;
+}
+/* line 471, css/app */
+.topics .commentcount {
+  float: right;
+  color: #777777;
+  font-size: 17px;
+  font-weight: 500;
+}
+/* line 479, css/app */
+.topics ul li img {
+  height: 47px;
+  border-radius: 4px;
+  margin-right: 20px;
+  float: left;
+}
+/* line 487, css/app */
+.topics > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 491, css/app */
+.topics > ul > li {
+  padding: 15px;
+  position: relative;
+  transition: 0.1s all ease-in-out;
+  background: #ffffff;
+  color: #9e9e9e;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  display: flow-root;
+}
+/* line 500, css/app */
+.topics > ul > li .title {
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+  transition: .2s;
+  color: #333;
+  width: fit-content;
+}
+/* line 507, css/app */
+.topics > ul > li .title small {
+  font-weight: normal;
+  color: #adadad;
+  float: right;
+  margin: 3px;
+}
+/* line 512, css/app */
+.topics > ul > li .title small .svg-inline--fa {
+  margin-left: 10px;
+  float: left;
+  margin-top: 4px;
+  margin-right: 8px;
+}
+/* line 520, css/app */
+.topics > ul > li:hover {
+  background: #f8f8f8;
+  position: relative;
+}
+/* line 523, css/app */
+.topics > ul > li:hover .title {
+  color: #000000;
+}
+/* line 527, css/app */
+.topics > ul > li > .status {
+  font-size: 28px;
+  opacity: 0.6;
+  margin-right: 20px;
+  float: left;
+  margin-top: 8px;
+}
+/* line 534, css/app */
+.topics > ul > li .content {
+  display: flow-root;
+  color: #adadad;
+}
+/* line 537, css/app */
+.topics > ul > li .content a {
+  color: #7aa2e8;
+  font-weight: 500;
+}
+/* line 544, css/app */
+.topics .active {
+  border: none;
+  background: #0000002e;
+  position: relative;
+  color: #ffffff;
+}
+/* line 549, css/app */
+.topics .active b {
+  color: #ffffff !important;
+}
+/* line 552, css/app */
+.topics .active:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #36393e;
+  right: 0;
+  top: 35px;
+}
+/* line 564, css/app */
+.topics .options {
+  float: right;
+  font-size: 16px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px;
+  margin: -10px;
+  display: none;
+  transition: .2s;
+}
+/* line 573, css/app */
+.topics .options:hover {
+  background: #323338;
+}
+/* line 578, css/app */
+.topics:hover .options {
+  display: block;
+}
+/* line 582, css/app */
+.topics .stats {
+  list-style-type: none;
+  display: flow-root;
+  margin: 10px -30px -30px -30px;
+  border-top: 1px solid #f8f9fd;
+  padding: 20px;
+}
+/* line 588, css/app */
+.topics .stats li {
+  padding: 0;
+  font-weight: 500;
+  font-size: 15px;
+  color: #333333;
+  float: left;
+  cursor: default;
+  margin-right: 40px;
+}
+/* line 597, css/app */
+.topics .stats .svg-inline--fa {
+  margin-right: 5px;
+  font-size: 14px;
+}
+/* line 602, css/app */
+.topics .authors {
+  list-style-type: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+/* line 607, css/app */
+.topics .authors li {
+  float: left;
+}
+/* line 611, css/app */
+.topics .tagsHolder {
+  float: right;
+}
+/* line 614, css/app */
+.topics p {
+  margin: 0;
+  width: 100%;
+  display: inline-block;
+}
+/* line 620, css/app */
+.registerValidation {
+  position: absolute !important;
+  right: -300px;
+  top: 0;
+  width: 300px !important;
+}
+/* line 626, css/app */
+.sidebar {
+  float: right;
+  width: 23%;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+/* line 632, css/app */
+.sidebar .topics .content {
+  width: 100%;
+}
+/* line 636, css/app */
+.sidebar h3 {
+  margin: -5px 0 10px 0;
+  padding: 0;
+  display: block;
+  font-weight: 500;
+  color: #616161;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+/* line 644, css/app */
+.sidebar h3 .svg-inline--fa {
+  height: 15px;
+  float: left;
+  margin: 4px 10px 0 0;
+}
+/* line 650, css/app */
+.sidebar button {
+  margin-bottom: 20px;
+}
+/* line 654, css/app */
+.tab {
+  float: left;
+  position: relative;
+  background: #b9c4f961;
+  padding: 4px 10px;
+  font-size: 11px;
+  border-radius: 4px;
+  color: #747fab;
+  font-weight: 500;
+  margin-left: 5px;
+}
+/* line 664, css/app */
+.tab:hover {
+  background: #b9c4f982;
+}
+/* line 667, css/app */
+.tab .material-icons {
+  float: left;
+  margin-right: 5px;
+  font-size: 15px;
+}
+/* line 673, css/app */
+.newtopics {
+  width: 100%;
+  float: left;
+  margin: 20px 0 24px 0;
+}
+/* line 677, css/app */
+.newtopics .tab {
+  background: rgba(255, 255, 255, 0.24);
+  color: rgba(255, 255, 255, 0.98);
+}
+/* line 681, css/app */
+.newtopics > ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+/* line 686, css/app */
+.newtopics > ul > li {
+  background: #222222;
+  padding: 25px;
+  color: #ffffff;
+  transition: 0.1s all ease-in-out;
+  opacity: 0.9;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  margin: 0 -2px;
+}
+/* line 696, css/app */
+.newtopics > ul > li:last-child {
+  border-radius: 0 4px 4px 0;
+}
+/* line 699, css/app */
+.newtopics > ul > li:first-child {
+  border-radius: 4px 0 0 4px;
+}
+/* line 702, css/app */
+.newtopics > ul > li:before {
+  content: "\f086";
+  font-family: 'Font Awesome\ 5 Free';
+  position: absolute;
+  font-size: 45px;
+  top: -10px;
+  color: rgba(0, 0, 0, 0.14);
+  left: 10px;
+}
+/* line 711, css/app */
+.newtopics > ul > li:hover {
+  opacity: 1;
+}
+/* line 714, css/app */
+.newtopics > ul > li > .title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  z-index: 2;
+  position: relative;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+}
+/* line 725, css/app */
+.newtopics .svg-inline--fa {
+  height: 14px;
+}
+/* line 729, css/app */
+.btnblue {
+  background: #8296f3;
+  border-color: #8393e2 #5f6ca9 #576298 #6d7dc5;
+}
+/* line 732, css/app */
+.btnblue:hover {
+  background: #7a8ce2;
+}
+/* line 736, css/app */
+.btngray {
+  background: #565656;
+}
+/* line 738, css/app */
+.btngray:hover {
+  background: #505050;
+}
+/* line 742, css/app */
+.more {
+  text-align: center;
+  display: block;
+  margin-top: 40px;
+}
+/* line 748, css/app */
+.stats .tab {
+  float: right;
+  margin: 3px 0 2px 5px;
+  cursor: pointer;
+}
+/* line 754, css/app */
+#tooltip {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  background: #111;
+  position: absolute;
+  z-index: 99;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 500;
+}
+/* line 764, css/app */
+#tooltip:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #111;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  margin-left: -5px;
+}
+/* line 778, css/app */
+#tooltip.top:after {
+  border-top-color: transparent;
+  border-bottom: 5px solid #111;
+  top: -10px;
+  bottom: auto;
+}
+/* line 786, css/app */
+#tooltip.left:after {
+  left: 10px;
+  margin: 0;
+}
+/* line 792, css/app */
+#tooltip.right:after {
+  right: 10px;
+  left: auto;
+  margin: 0;
+}
+/* line 798, css/app */
+.filtertopics {
+  float: right;
+  margin-bottom: 20px;
+}
+/* line 801, css/app */
+.filtertopics > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 805, css/app */
+.filtertopics > ul > li {
+  float: left;
+  background: #ffffff;
+  height: 42px;
+  width: 50px;
+  border-radius: 4px;
+  font-size: 16px;
+  padding-top: 9px;
+  padding-left: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  transition: 0.1s all ease-in-out;
+}
+/* line 820, css/app */
+.filtertopics > ul > li:hover {
+  background: #f9f9f9;
+}
+/* line 826, css/app */
+.sidelist {
+  background: #FFF;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+/* line 830, css/app */
+.sidelist > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 834, css/app */
+.sidelist > ul > li {
+  display: block;
+  padding: 20px;
+  border-bottom: 1px solid #f7f7f7;
+}
+/* line 838, css/app */
+.sidelist > ul > li:last-child {
+  border: none;
+  border-radius: 0 0 2px 2px;
+}
+/* line 842, css/app */
+.sidelist > ul > li:first-child {
+  border-radius: 4px 4px 0 0;
+}
+/* line 845, css/app */
+.sidelist > ul > li img {
+  float: right;
+  height: 55px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  border: 4px solid white;
+  margin: -7px;
+}
+/* line 858, css/app */
+.guest {
+  color: #ffffff;
+  padding: 10px 20px 20px 20px;
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+}
+/* line 864, css/app */
+.guest h2 {
+  font-weight: 500;
+  margin: 0 0 0 0;
+  padding: 0;
+  color: inherit;
+  font-size: 20px;
+}
+/* line 871, css/app */
+.guest button {
+  background: #7a8ce2;
+  margin: 10px 0 0 0;
+  width: 300px;
+}
+/* line 875, css/app */
+.guest button:hover {
+  background: #7283d6;
+}
+/* line 879, css/app */
+.guest .svg-inline--fa {
+  font-size: 60px;
+}
+/* line 883, css/app */
+.guestmembers {
+  margin-top: 20px;
+}
+/* line 885, css/app */
+.guestmembers > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 889, css/app */
+.guestmembers > ul > li {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+}
+/* line 892, css/app */
+.guestmembers > ul > li > img {
+  border-radius: 50%;
+  height: 40px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  border: 2px solid white;
+}
+/* line 903, css/app */
+.userslide {
+  right: 0;
+  background: #373f52 !important;
+  color: #FFF !important;
+}
+/* line 907, css/app */
+.userslide > .content {
+  padding: 20px;
+}
+/* line 909, css/app */
+.userslide > .content .name {
+  font-size: 15px;
+  font-weight: 500;
+  margin: -20px -20px 20px -20px;
+  padding: 20px;
+  border-bottom: 1px solid #3e465a;
+}
+/* line 916, css/app */
+.userslide > .content .online {
+  width: auto;
+  display: block;
+  padding: 2px 10px;
+  background: #2e3648;
+  color: white;
+  margin: 10px 0 0 0;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+/* line 927, css/app */
+.userslide > .content .logout {
+  float: right;
+}
+/* line 931, css/app */
+.userslide > .content .options ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 936, css/app */
+.userslide > .content .options ul a li {
+  background: #2e3648;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 500;
+  opacity: 0.85;
+  transition: 0.1s all ease-in-out;
+}
+/* line 945, css/app */
+.userslide > .content .options ul a li .svg-inline--fa {
+  margin-right: 10px;
+}
+/* line 948, css/app */
+.userslide > .content .options ul a li:hover {
+  opacity: 1;
+}
+/* line 957, css/app */
+.sideslide {
+  position: fixed;
+  min-width: 20%;
+  background: #35363b;
+  z-index: 1;
+  height: 100%;
+  display: none;
+  overflow-y: auto;
+}
+/* line 965, css/app */
+.sideslide > .title {
+  padding: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFF;
+  background: #4e525a;
+  text-transform: uppercase;
+  height: 66px;
+}
+/* line 976, css/app */
+.sideslide .topics .title small {
+  margin: 0 !important;
+  float: none !important;
+}
+/* line 979, css/app */
+.sideslide .topics .title small .svg-inline--fa {
+  margin-left: 0 !important;
+}
+/* line 985, css/app */
+.sideslide .topics > ul > li {
+  padding: 20px !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  background: #35363b;
+  color: #FFF;
+}
+/* line 991, css/app */
+.sideslide .topics > ul > li .title {
+  font-size: 14px !important;
+  color: #d8d8d8;
+}
+/* line 995, css/app */
+.sideslide .topics > ul > li:hover {
+  background: #404148;
+}
+/* line 999, css/app */
+.sideslide .topics > ul > li .stats > li {
+  color: inherit;
+}
+/* line 1005, css/app */
+.sideslide .topics .readcount {
+  float: right;
+  color: #d8d8d8;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: default;
+}
+/* line 1013, css/app */
+.sideslide .stats {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+/* line 1017, css/app */
+.sideslide .stats .tab {
+  margin: 10px 5px 0 0;
+  background: #4e525a;
+  color: #d0d0d0;
+}
+/* line 1021, css/app */
+.sideslide .stats .tab:hover {
+  color: #FFF;
+}
+/* line 1027, css/app */
+.container {
+  float: right;
+  z-index: 2;
+  position: relative;
+  background: #ecf1f5;
+  height: 100%;
+  width: 100%;
+}
+/* line 1035, css/app */
+.contentbox {
+  padding: 20px;
+  transition: .2s;
+  background: #ffffff;
+  color: #9e9e9e;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  display: flow-root;
+}
+/* line 1046, css/app */
+.contentbox h3 {
+  margin: -20px -20px 20px -20px;
+  display: block;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 17px;
+  background: #8296f3;
+  border-radius: 4px 4px 0 0;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+}
+/* line 1059, css/app */
+.contentbox h3 .svg-inline--fa {
+  height: 15px;
+  float: left;
+  margin: 4px 10px 0 0;
+}
+/* line 1066, css/app */
+.validatorPending {
+  font-weight: 500;
+  border-bottom: 1px solid #f0f2f5;
+  padding: 8px 0;
+}
+/* line 1070, css/app */
+.validatorPending .svg-inline--fa {
+  margin-right: 10px;
+}
+/* line 1073, css/app */
+.validatorPending:first-child {
+  padding-top: 0;
+}
+/* line 1076, css/app */
+.validatorPending:last-child {
+  padding-bottom: 0;
+}
+/* line 1080, css/app */
+.validatorValid {
+  color: #6ab04c;
+  font-weight: 500;
+  border-bottom: 1px solid #f0f2f5;
+  padding: 8px 0;
+}
+/* line 1085, css/app */
+.validatorValid .svg-inline--fa {
+  margin-right: 10px;
+}
+/* line 1089, css/app */
+.validatorInvalid {
+  color: #eb4d4b;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+/* line 1093, css/app */
+.validatorInvalid .svg-inline--fa {
+  margin-right: 10px;
+}
+/* line 1096, css/app */
+.validatorInvalid .info {
+  color: #9e9e9e;
+  font-weight: normal;
+  padding-left: 20px;
+}
+/* line 1102, css/app */
+.label {
+  width: auto;
+}
+/* line 1105, css/app */
+.fieldContainer {
+  float: left;
+}
+/* line 1108, css/app */
+.tModal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 25%;
+  margin: auto;
+  max-width: 100%;
+  z-index: 6;
+  display: none;
+  width: 400px;
+  border-radius: 4px;
+  max-width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 12px;
+  background: #fff;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.14), 0 4px 5px 0 rgba(0, 0, 0, 0.098), 0 1px 10px 0 rgba(0, 0, 0, 0.084);
+}
+/* line 1125, css/app */
+.tModal h3 {
+  font-weight: 500;
+  text-align: left;
+  margin: -12px -12px 12px -12px;
+  padding: 20px 20px 18px 20px;
+  border-radius: 4px 4px 0 0;
+  color: #778494;
+  border-bottom: 1px solid #ebeef5;
+  text-transform: uppercase;
+}
+/* line 1135, css/app */
+.tModal .tModalClose {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+  color: #606b80;
+  margin: 0;
+}
+/* line 1143, css/app */
+.alertify-notifier {
+  top: 0;
+}
+/* line 1144, css/app */
+.alertify-notifier .ajs-message.ajs-visible {
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 1;
+  max-height: 100%;
+  padding: 20px;
+  margin-top: 10px;
+  color: white;
+  border-radius: 4px;
+}
+/* line 1155, css/app */
+.alertify-notifier .ajs-message.ajs-visible ul {
+  margin: 0;
+  padding: 0 20px;
+}
+/* line 1163, css/app */
+.alertify-notifier.ajs-right .ajs-message.ajs-visible {
+  right: 260px !important;
+}
+/* line 1167, css/app */
+.tOverlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  display: none;
+}
+/* line 1179, css/app */
+.material-icons {
+  font-size: 18px;
+}
+/* line 1182, css/app */
+.placeholder_username {
+  float: right;
+  margin: 2px 0;
+}
+/* line 1186, css/app */
+.subnav {
+  width: 100%;
+  padding: 0;
+  float: left;
+  background: #ffffff;
+  line-height: 1;
+  position: relative;
+  border-bottom: 1px solid #e8ebef;
+  z-index: 1;
+}
+/* line 1195, css/app */
+.subnav > ul {
+  list-style-type: none;
+  margin: 0 auto;
+  width: 70%;
+  padding: 0 40px;
+}
+/* line 1201, css/app */
+.subnav > ul > a > li {
+  padding: 15px;
+  float: left;
+  color: rgba(43, 43, 43, 0.55);
+  transition: 0.1s all ease-in-out;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+}
+/* line 1210, css/app */
+.subnav > ul > a > li img {
+  display: inline-block;
+  border-radius: 4px;
+  height: 35px;
+  margin: -9px 10px -9px 0;
+}
+/* line 1216, css/app */
+.subnav > ul > a > li:hover {
+  color: #333333;
+  background: #f8f8f8;
+  border-color: #8296f3;
+}
+/* line 1224, css/app */
+.subnav .material-icons {
+  float: left;
+  margin: 6px 5px 0 0;
+  line-height: 0;
+}
+/* line 1231, css/app */
+.categories > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 1235, css/app */
+.categories > ul > li {
+  background: #FFF;
+  padding: 10px;
+  border-bottom: 1px solid #f8f8f9;
+  font-weight: 500;
+  color: rgba(43, 43, 43, 0.55);
+  transition: 0.1s all ease-in-out;
+}
+/* line 1242, css/app */
+.categories > ul > li .head {
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 1247, css/app */
+.categories > ul > li:first-child {
+  border-radius: 2px 2px 0 0;
+}
+/* line 1250, css/app */
+.categories > ul > li:last-child {
+  border-radius: 0 0 2px 2px;
+}
+/* line 1253, css/app */
+.categories > ul > li:hover {
+  background: #f8f8f8;
+}
+/* line 1258, css/app */
+.categories .material-icons {
+  float: left;
+  cursor: default;
+  margin: 3px 10px 0 0;
+}
+/* line 1265, css/app */
+.readcount .material-icons {
+  float: left;
+  margin: 1px 5px;
+}
