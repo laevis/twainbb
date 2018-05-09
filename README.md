@@ -1,4 +1,2 @@
+# twainbb
 TwainBB
-===========
-
-Real-time forum software
